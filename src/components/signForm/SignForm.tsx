@@ -53,7 +53,7 @@ const SignForm = ({ type }: { type: 'signIn' | 'signUp' }) => {
         </S.label>
         <br />
         <Button
-          data-testid='signin-button'
+          data-testid={type === 'signIn' ? 'signin-button' : 'signup-button'}
           color={isDisabled() ? 'disable' : 'success'}
           disabled={isDisabled()}
         >
