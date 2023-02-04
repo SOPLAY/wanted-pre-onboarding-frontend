@@ -1,7 +1,5 @@
-import React from 'react';
+import SignForm from '@components/signForm/SignForm';
+import withAuth from '@utils/hoc/withAuth';
+const SignIn = () => <SignForm type='signIn' />;
 
-const SignIn = () => {
-  return <div>signIn</div>;
-};
-
-export default SignIn;
+export default withAuth(SignIn, false);
