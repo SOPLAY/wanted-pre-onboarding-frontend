@@ -11,7 +11,7 @@ const useAuth = () => {
       .signIn(data)
       .then((res) => {
         localStorage.setItem(authKey.LOCAL_STORAGE_KEY, res.data.access_token);
-        navigate('/todos');
+        navigate('/todo');
         return res;
       })
       .catch((err) => {

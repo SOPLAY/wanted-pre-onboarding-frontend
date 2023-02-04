@@ -8,6 +8,7 @@ const Router = () => (
       <Route path='signin' element={<pages.auth.SignIn />} />
       <Route path='signup' element={<pages.auth.SignUp />} />
     </Route>
+    <Route path='todo' element={<pages.todos.Todo />}></Route>
   </Routes>
 );
 
