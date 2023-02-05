@@ -1,13 +1,15 @@
 import Layout from '@components/layout/Layout';
 import Router from './Router';
-import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
+import TodoProvider from './contexts/todo/TodoProvider';
 
 function App() {
   return (
     <BrowserRouter>
       <Layout>
-        <Router />
+        <TodoProvider>
+          <Router />
+        </TodoProvider>
       </Layout>
     </BrowserRouter>
   );
