@@ -1,7 +1,6 @@
 import apis from '@apis/index';
 import { ICreateTodo } from '@apis/todoApis';
 import useGetTodos from './useGetodos';
-import useUpdateTodo from './useUpdateTodo';
 
 const useCreateTodo = () => {
   const getTodos = useGetTodos();
