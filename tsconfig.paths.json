@@ -7,7 +7,8 @@
       "@utils/*": ["./utils/*"],
       "@apis/*": ["./apis/*"],
       "@pages/*": ["./pages/*"],
-      "@constants/*": ["./constants/*"]
+      "@constants/*": ["./constants/*"],
+      "@contexts/*": ["./contexts/*"]
     }
   }
 }

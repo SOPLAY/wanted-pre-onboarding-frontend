@@ -14,4 +14,5 @@ export const nav = tw.nav`
 `;
 export const title = tw.p`
   font-bold
+  select-none
 `;
