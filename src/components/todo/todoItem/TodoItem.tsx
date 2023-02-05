@@ -19,7 +19,7 @@ const TodoItem = ({ id, todo: todoFetchValue, isCompleted }: ITodoItem) => {
   const deleteTodo = useDeleteTodo();
 
   //refetch false로 설정
-  const updateTodo = useUpdateTodo(false);
+  const updateTodo = useUpdateTodo();
 
   const onEditClick = () => {
     setIsEdit(!isEdit);
