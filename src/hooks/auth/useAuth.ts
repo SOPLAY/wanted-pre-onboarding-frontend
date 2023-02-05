@@ -30,7 +30,10 @@ const useAuth = () => {
         alert(err.response.data.message);
       });
 
-  return { signIn, signUp };
+  const logOut = () => {
+    localStorage.removeItem(authKey.LOCAL_STORAGE_KEY);
+  };
+  return { signIn, signUp, logOut };
 };
 
 export default useAuth;
